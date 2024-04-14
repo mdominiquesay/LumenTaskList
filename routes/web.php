@@ -20,9 +20,12 @@ $router->get('/', function ()  {
 $router->get('/user/{name}', function ($name) {
     return ['created'=>true];
 });
-$router->post('/user', 'UserController@show');
+$router->post('/user', 'TaskController@show');
 $router->post('/submit-form', [
-    'as' => 'submitForm', 'uses' => 'UserController@submit'
+    'as' => 'submitForm', 'uses' => 'TaskController@submit'
 ]);
-$router->get('/form', 'UserController@showForm');
-$router->get('/showData', 'UserController@showData');
+$router->get('/form', 'TaskController@showForm');
+$router->get('/showData', ['as' => 'showData', 'uses' => 'TaskController@showData']);
+$router->get('/edit/{id}', 'TaskController@editForm');
+$router->post('/update', 'TaskController@update');
+$router->get('/delete/{id}', 'TaskController@delete');

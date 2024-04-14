@@ -23,10 +23,10 @@ class ExampleTest extends TestCase
                 'created' => true,
              ]);
         */
-        $formData = ['name' => 'John'];
+        $formData = ['name' => 'John','id' => '1'];
 
         // Simulate a POST request to the submitForm route with form data
-        $response = $this->post('/submit-form', $formData)->seeJson([
+        $response = $this->post('/update', $formData)->seeJson([
             'name' => 'John',
          ]);
 
