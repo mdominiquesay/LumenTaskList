@@ -25,19 +25,13 @@ To get started with Lumen Task List, follow these simple steps:
     cp .env.example .env
     ```
 
-4. **Generate Application Key**: Generate a unique application key for security purposes.
-
-    ```
-    php artisan key:generate
-    ```
-
-5. **Run Migrations**: Run the database migrations to set up the necessary tables.
+4. **Run Migrations**: Run the database migrations to set up the necessary tables.
 
     ```
     php artisan migrate
     ```
 
-6. **Serve the Application**: Finally, serve the application locally.
+5. **Serve the Application**: Finally, serve the application locally.
 
     ```
     php -S localhost:8000 -t public
@@ -60,14 +54,3 @@ Here's how you can use Lumen Task List:
 - **Edit Task**: Click on the "Edit" button next to a task to modify its details.
 - **Delete Task**: Remove a task from the list by clicking on the "Delete" button.
 
-## Contributing
-
-We welcome contributions from the community to make Lumen Task List even better! If you have any ideas for new features, bug fixes, or improvements, feel free to open an issue or submit a pull request.
-
-## Support
-
-If you encounter any issues while using Lumen Task List or have any questions, please don't hesitate to reach out to us. We're here to help!
-
-## License
-
-Lumen Task List is open-source software licensed under the [MIT License](LICENSE).

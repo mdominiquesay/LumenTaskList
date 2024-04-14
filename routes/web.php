@@ -13,8 +13,8 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->get('/', function ()  {
+    return view('home');
 });
 
 $router->get('/user/{name}', function ($name) {
@@ -26,7 +26,3 @@ $router->post('/submit-form', [
 ]);
 $router->get('/form', 'UserController@showForm');
 $router->get('/showData', 'UserController@showData');
-$router->get('/form2', function () {
-  
-    return view('form');
-});
